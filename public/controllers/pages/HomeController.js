@@ -7,7 +7,8 @@ class HomeController extends PageController {
     }
 
     getTitle() {
-        this.model.onGetTitle();
+        const title = this.model.onGetTitle();
+        return title;
     }
 }
 
