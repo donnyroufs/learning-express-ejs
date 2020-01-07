@@ -7,12 +7,6 @@ class PageController {
     getTitle() {
         return this.title;
     }
-
-    renderPage = (req, res) => {
-        res.render(`${this.title}.ejs`, {
-            controller: this,
-        });
-    }
 }
 
 module.exports = PageController;
